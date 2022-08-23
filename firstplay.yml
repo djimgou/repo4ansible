@@ -1,0 +1,10 @@
+---
+- name: first play
+  hosts: all
+  tasks:
+    - name: Create a file
+      command: apt-get update
+    - name: installl httpd
+      command: apt install apache2 -y
+    - name: git
+      command: apt install git -y

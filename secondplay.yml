@@ -1,0 +1,11 @@
+--- 
+- name: install apache2
+  hosts: all
+  tasks:
+   - name: update ubuntu
+     command: apt-get update
+   - name: install git
+     command: apt install git -y
+   - name: install httpd
+     command: apt install apache2 -y
+
